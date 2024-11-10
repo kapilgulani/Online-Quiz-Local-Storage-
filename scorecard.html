@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadScorecard()">
+    <div class="test-box">
+        <header>
+            <h1>Your Score</h1>
+        </header>
+        <main>
+            <details open>
+                <summary>Math Section</summary>
+                <p>Score: <span id="mathScore">0</span></p> <!-- Display math score -->
+            </details>
+            <details>
+                <summary>Cosine Section</summary>
+                <p>Score: <span id="cosineScore">0</span></p> <!-- Display cosine score -->
+            </details>
+            <details>
+                <summary>English Section</summary>
+                <p>Score: <span id="englishScore">0</span></p> <!-- Display English score -->
+            </details>
+            <details>
+                <summary>Video Section</summary>
+                <p>Score: <span id="videoScore">0</span></p> <!-- Display video score -->
+            </details>
+            <button onclick="finishQuiz()">Finish Quiz</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

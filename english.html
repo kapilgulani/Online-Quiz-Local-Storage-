@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test-box">
+        <header>
+            <h1>Question 3: English Grammar</h1>
+        </header>
+        <main>
+            <p>Fill in the blanks to complete the sentence:</p>
+            <p><span id="blank1" style="color: aqua;">_____</span> Mark <span id="blank2" style="color: aqua;">_____</span> John completed the project.</p>
+
+            <!-- MCQs for the blanks -->
+            <h3>Select the correct options:</h3>
+            <input type="radio" name="option" value="Mark and complete" onclick="fillBlanks('Mark', 'complete')"> Both, or<br>
+            <input type="radio" name="option" value="John and complete" onclick="fillBlanks('John', 'complete')"> Either, nor<br>
+            <input type="radio" name="option" value="Mark and completes" onclick="fillBlanks('Mark', 'completes')"> Either, or<br>
+            <input type="radio" name="option" value="John and completes" onclick="fillBlanks('John', 'completes')"> Neither, nor<br>
+
+            <button onclick="checkEnglishAnswer()">Submit & Next Question</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

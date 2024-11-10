@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test-box">
+        <header>
+            <h1>Question 4: Black Hole Video</h1>
+        </header>
+        <main>
+            <p>Watch the video and answer the question below:</p>
+            <div class="video-container">
+                <!-- Updated video link -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y8ymU_UBD3I"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <form id="videoQuestion" onsubmit="return submitAnswer('video')">
+                <input type="radio" name="video" value="NASA" required> NASA.Gov<br>
+                <input type="radio" name="video" value="Data"> Data.Gov<br>
+                <button type="submit">Submit & Next Question</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

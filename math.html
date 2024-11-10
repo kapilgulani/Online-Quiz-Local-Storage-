@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test-box">
+        <header>
+            <h1>Question 1: Math Graph</h1>
+        </header>
+        <main>
+            <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the line:</p>
+            <img src="math-graph.png" alt="Math Graph" class="math-graph"><br>
+
+            <!-- Options for the Math question -->
+            <form id="mathQuestion" onsubmit="return submitAnswer('formula')">
+                <input type="radio" name="formula" value="y = mx + b" required>
+                <label>y = mx + b</label><br>
+
+                <input type="radio" name="formula" value="(x − h)² + (y − k)² = r²">
+                <label>(x − h)² + (y − k)² = r²</label><br>
+
+                <input type="radio" name="formula" value="y − y1 = m(x − x1)">
+                <label>y − y1 = m(x − x1)</label><br>
+
+                <button type="submit">Submit & Next Question</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

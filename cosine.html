@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosine Formula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test-box">
+        <header>
+            <h1>Question 2: Cosine Theorem</h1>
+        </header>
+        <main>
+            <p>Select the cosine theorem formula:</p>
+            <form id="cosineQuestion" onsubmit="return submitAnswer('cosine')">
+                <input type="radio" name="cosine" value="Formula1" required>
+                <label>cos(α ± β) = cosα cosβ ∓ sinα sinβ</label><br>
+                <input type="radio" name="cosine" value="Formula2">
+                <label>sinα + sinβ = 2 sin((α + β)/2) cos((α - β)/2)</label><br>
+                <button type="submit">Submit & Next Question</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
